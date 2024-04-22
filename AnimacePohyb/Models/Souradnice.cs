@@ -8,7 +8,7 @@
             PozY = pozY;
             VelikostObrazku = velikostObrazku;
         }
-        private int PozX { get; }
+        public int PozX { get; }
         private int PozY { get; }
         public int VelikostObrazku { get; }
         public string Style => $"left: {PozX}px; top: {PozY}px;";

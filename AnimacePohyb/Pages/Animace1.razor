@@ -1,9 +1,9 @@
 ﻿<PageTitle>Animace základ</PageTitle>
 <div class="container">
     <div id="znovu" onclick="location.reload()"> </div>
-    <div class="postava" style="@Postava.Style">
+    <div class="postava" style="@Postava.Style" @onclick="Postava.Presun">
         <p class="postavaPopis">@Postava.Popisek</p>
-        <img src="@Postava.Obrazek" />
+        <img src="@Postava.Obrazek" style="width:100%; @Postava.TransformRotateY" />
     </div>
 </div>
 
